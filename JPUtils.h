@@ -9,10 +9,8 @@
 
 @interface JPUtils : NSObject
 
-+(JPUtils *)singleton;
-
 +(BOOL)checkStringIsEmail:(NSString *)string;
 +(NSString *)prepareImageToUpload:(UIImage *)image;
-+(void)createAlertViewWithTitle:(NSString *)title andMessage:(NSString *)message andButton:(NSString *)button;
++(void)createAlertViewWithTitle:(UIViewController *)parentController :(NSString *)title andMessage:(NSString *)message andButton:(NSString *)button;
 
 @end
